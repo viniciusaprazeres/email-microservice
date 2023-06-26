@@ -1,5 +1,6 @@
 package com.viniciusaprazeres.email.model;
 
+import com.viniciusaprazeres.email.enums.StatusEmail;
 import jakarta.persistence.*;
 import lombok.Data;
 
