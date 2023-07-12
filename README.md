@@ -19,6 +19,21 @@ Envio de emails de forma assíncrona.
 * Maven
 <br><br>
 
+## Uso
+O microsserviço expõe uma API REST para o envio de emails. Você pode enviar um email fazendo uma requisição POST para a seguinte rota: `http://localhost:8080/sending-email` <br><br>
+
+O corpo da requisição deve conter os seguintes parâmetros (JSON): <br>
+```
+{
+    "ownerReference": "Nome do proprietário",
+    "emailFrom": "remetente@email.com",
+    "emailTo": "destinatario@email.com",
+    "subject": "Assunto do e-mail",
+    "text": "Texto do e-mail."
+}
+```
+<br>
+
 ## Contribuição
 Contribuições são bem-vindas! Se você tiver alguma melhoria, correção de bugs ou novas funcionalidades, sinta-se à vontade para abrir uma issue ou enviar um pull request.
 <br><br>
